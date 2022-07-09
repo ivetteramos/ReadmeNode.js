@@ -48,8 +48,35 @@ const questions =  [
     },
     {
         type: "input",
-        message: "What does the user need to know about using the repository?",
+        message: "What is the usage information of your project?",
         name: "usage"
     },
     
 ];
+
+function fileCreator(fileName, data)
+{
+        fs.writeFile(fileName, data, function(err){
+                console.log(fileName)
+                console.log(data)
+                if (err) {
+                        return console.log(err)
+                } else {
+                        console.log("Success! Readme is Ready!")
+                }
+
+        })
+
+
+}
+function runProgram() 
+{
+        inquirer.prompt(questions)
+        .then(function(data){
+                fileCreator("README.md", generateReadme(data));
+                console.log(data)
+        })
+
+}
+
+runProgram();
