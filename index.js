@@ -1,4 +1,4 @@
-const generateMarkdown = require('./utils/generateMarkdown')
+const generateReadme = require('./utils/generateReadme')
 const fs = require('fs');
 const inquirer = require('inquirer');
 
@@ -66,8 +66,6 @@ function fileCreator(fileName, data)
                 }
 
         })
-
-
 }
 function runProgram() 
 {
@@ -76,7 +74,6 @@ function runProgram()
                 fileCreator("README.md", generateReadme(data));
                 console.log(data)
         })
-
 }
 
 runProgram();
