@@ -1,7 +1,9 @@
-# Readme
+# ReadmeGenerator
 
 ## Description
-undefined
+
+Link to video [https://drive.google.com/file/d/1mBAB1AxS3oA0CxU-C0z4aTpL8gpX2FBz/view]
+
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -11,20 +13,20 @@ undefined
 - [Questions](#questions)
 
 ## Installation
-npm i
+node nf and node inquirer
 
 ## Usage
-none
+public
 
 ## License
-MIT
+Unlicense
 ---
 
 ## Contribution
 undefined
 
 ## Tests
-npm run test
+node index.js from the terminal
 
 ## Questions 
 undefined

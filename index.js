@@ -14,6 +14,16 @@ const questions =  [
         name: 'email',
     },
     {
+        type: 'input',
+        message: 'Please provide a link to your Repo?',
+        name: 'repolink',
+    },
+    {
+        type: 'input',
+        message: 'Please provide a link to your Readme',
+        name: 'readmeLink',
+    },
+    {
         type: "input",
         message: "What is the title of your project?",
         name: "title"
